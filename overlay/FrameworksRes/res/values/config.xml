@@ -463,6 +463,9 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
     <!-- Boolean indicating USSD over IMS is allowed.
      If it is not supported due to modem limitations, USSD send over the CS pipe instead.-->
     <bool name="config_allow_ussd_over_ims">true</bool>
