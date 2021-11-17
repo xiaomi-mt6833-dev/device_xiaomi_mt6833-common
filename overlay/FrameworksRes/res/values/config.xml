@@ -609,4 +609,8 @@
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
     </integer-array>
 
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
 </resources>
