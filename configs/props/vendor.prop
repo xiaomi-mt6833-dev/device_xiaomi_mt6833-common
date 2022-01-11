@@ -167,6 +167,7 @@ ro.lmk.thrashing_limit_decay=50
 
 # Media
 debug.mediatek.disp_decompress=1
+debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
 ro.vendor.jpeg_decode_sw_opt=1
 ro.vendor.mtk_config_max_dram_size=0x800000000
