@@ -131,6 +131,9 @@ TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := mt6833
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
