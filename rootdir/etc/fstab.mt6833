@@ -4,14 +4,14 @@
 # <src>						<mnt_point>			<type>		<mnt_flags and options>													<fs_mgr_flags>
 
 # Logical Partitions
-system						/system				ext4		ro															wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,slotselect
-system_dlkm					/system_dlkm			ext4		ro															wait,avb,logical,first_stage_mount,slotselect
-system_ext					/system_ext			ext4		ro															wait,avb,logical,first_stage_mount,slotselect
-vendor						/vendor				ext4		ro															wait,avb,logical,first_stage_mount,slotselect
-vendor_dlkm					/vendor_dlkm			ext4		ro															wait,avb,logical,first_stage_mount,slotselect
-odm						/odm				ext4		ro															wait,avb,logical,first_stage_mount,slotselect
-odm_dlkm					/odm_dlkm			ext4		ro															wait,avb,logical,first_stage_mount,slotselect
-product						/product			ext4		ro															wait,avb,logical,first_stage_mount,slotselect
+system						/system				ext4		noatime,ro														wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,slotselect
+system_dlkm					/system_dlkm			ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
+system_ext					/system_ext			ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
+vendor						/vendor				ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
+vendor_dlkm					/vendor_dlkm			ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
+odm						/odm				ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
+odm_dlkm					/odm_dlkm			ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
+product						/product			ext4		noatime,ro														wait,avb,logical,first_stage_mount,slotselect
 
 # Boot
 /dev/block/by-name/boot				/boot				emmc		defaults														first_stage_mount,nofail,slotselect
