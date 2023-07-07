@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Enable Virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
 
+# Install developer GSI keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6833-common/mt6833-common-vendor.mk)
 
