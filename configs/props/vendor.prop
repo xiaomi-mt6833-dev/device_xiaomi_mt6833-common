@@ -6,6 +6,7 @@ ro.vendor.audio.us.proximity=true
 vendor.audiohal.telephonytx.type=2
 
 # Bluetooth
+bluetooth.device.class_of_device=90,2,12
 persist.bluetooth.a2dp_offload.disabled=false
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
