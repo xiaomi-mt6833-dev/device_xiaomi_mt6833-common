@@ -222,6 +222,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6833 \
     FrameworksResOverlayMT6833 \
+    SettingsOverlayMT6833 \
     TelephonyOverlayMT6833 \
     WifiResOverlayMT6833
 
