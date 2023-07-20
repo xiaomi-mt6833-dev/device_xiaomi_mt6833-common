@@ -1,5 +1,9 @@
 # All blobs are from Redmi/opal/opal:12/SP1A.210812.016/V14.0.2.0.TGLMIXM:user/release-keys, unless pinned
 
+# AEE
+-vendor/lib/libaedv.so
+-vendor/lib64/libaedv.so
+
 # Gatekeeper
 -vendor/lib64/hw/gatekeeper.beanpod.so
 
