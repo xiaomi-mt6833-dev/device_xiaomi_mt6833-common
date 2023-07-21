@@ -254,6 +254,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     $(LOCAL_PATH)/configs/perf/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml
 
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
