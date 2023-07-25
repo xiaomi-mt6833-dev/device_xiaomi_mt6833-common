@@ -204,6 +204,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayMT6833 \
     FrameworksResOverlayMT6833 \
     WifiResOverlayMT6833
 
