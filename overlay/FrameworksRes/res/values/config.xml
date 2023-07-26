@@ -404,6 +404,12 @@
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
 
+    <!-- Array of packages to exclude from location indicators -->
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- ImsService -->
+        <item>com.mediatek.ims</item>
+    </string-array>
+
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
