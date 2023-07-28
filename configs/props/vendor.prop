@@ -69,6 +69,7 @@ debug.mediatek.appgamepq_compress=1
 debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_hwc_vds=0
+debug.sf.enable_transaction_tracing=false
 debug.sf.high_fps.early.app.duration=22500000
 debug.sf.high_fps.early.sf.duration=27600000
 debug.sf.high_fps.earlyGl.app.duration=22500000
