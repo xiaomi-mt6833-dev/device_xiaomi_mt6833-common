@@ -77,6 +77,7 @@ debug.sf.high_fps.earlyGl.sf.duration=27600000
 debug.sf.high_fps.hwc.min.duration=17000000
 debug.sf.high_fps.late.app.duration=22500000
 debug.sf.high_fps.late.sf.duration=27600000
+debug.sf.predict_hwc_composition_strategy=0
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali
