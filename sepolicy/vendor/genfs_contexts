@@ -1,0 +1,9 @@
+# Wakeup (https://lkml.org/lkml/2019/8/6/1275)
+genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/wakeup                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11d01000.i2c9/i2c-9/9-005a/wakeup                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11e00000.i2c0/i2c-0/0-0066/power_supply/sc8551-standalone/wakeup                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11e00000.i2c0/i2c-0/0-0066/wakeup                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11e01000.i2c5/i2c-5/5-004e/tcpc/type_c_port0/wakeup                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11e01000.i2c5/i2c-5/5-004e/wakeup                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify/wakeup                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input3/wakeup                                                                       u:object_r:sysfs_wakeup:s0
