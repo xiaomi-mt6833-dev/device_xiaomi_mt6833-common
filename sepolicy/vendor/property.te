@@ -1,5 +1,5 @@
 # Camera
-vendor_internal_prop(vendor_camera_persist_prop)
+vendor_internal_prop(vendor_camera_prop)
 
 # Fingerprint
 vendor_internal_prop(vendor_fingerprint_prop)
