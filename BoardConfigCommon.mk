@@ -52,5 +52,17 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Kernel
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)-kernel/dtb
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image.gz
+
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(wildcard $(DEVICE_PATH)-kernel/modules/*.ko)
+
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/headers
+TARGET_KERNEL_CONFIG := defconfig
+
 # Inherit the proprietary files
 include vendor/xiaomi/mt6833-common/BoardConfigVendor.mk
