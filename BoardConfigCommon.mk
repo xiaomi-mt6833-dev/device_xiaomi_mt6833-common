@@ -96,5 +96,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
 
+# Platform
+BOARD_VENDOR := xiaomi
+TARGET_BOARD_PLATFORM := mt6833
+
 # Inherit the proprietary files
 include vendor/xiaomi/mt6833-common/BoardConfigVendor.mk
