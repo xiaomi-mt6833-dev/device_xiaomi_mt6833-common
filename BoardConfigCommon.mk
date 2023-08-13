@@ -19,7 +19,8 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_dlkm \
     odm \
-    odm_dlkm
+    odm_dlkm \
+    vbmeta
 
 BOARD_USES_RECOVERY_AS_BOOT := true
 
@@ -121,6 +122,9 @@ TARGET_BOARD_PLATFORM := mt6833
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Verified Boot
+BOARD_AVB_ENABLE := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/mt6833-common/BoardConfigVendor.mk
