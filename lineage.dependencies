@@ -1,0 +1,21 @@
+[
+	{
+		"remote"	:	"github",
+		"repository"	:	"LineageOS/android_device_mediatek_sepolicy_vndr",
+		"target_path"	:	"device/mediatek/sepolicy_vndr"
+	},
+	{
+		"remote"	:	"github",
+		"repository"	:	"LineageOS/android_hardware_xiaomi",
+		"target_path"	:	"hardware/xiaomi"
+	},
+	{
+		"remote"	:	"github",
+		"repository"	:	"xiaomi-mt6833-dev/hardware_mediatek",
+		"target_path"	:	"hardware/mediatek"
+	},
+	{
+		"repository"	:	"vendor_xiaomi_mt6833-common",
+		"target_path"	:	"vendor/xiaomi/mt6833-common"
+	}
+]
