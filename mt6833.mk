@@ -70,4 +70,5 @@ PRODUCT_PACKAGES += \
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/mediatek
