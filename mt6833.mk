@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.mt6833.rc
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \

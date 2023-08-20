@@ -47,6 +47,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.recovery.mt6833.rc",
+    recovery: true,
+    src: "etc/init.recovery.mt6833.rc",
+    sub_dir: "init",
+}
+
+prebuilt_etc {
     name: "init.sensor_2_0.rc",
     src: "etc/init.sensor_2_0.rc",
     sub_dir: "init/hw",
