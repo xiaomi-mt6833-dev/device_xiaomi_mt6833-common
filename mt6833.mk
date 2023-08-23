@@ -82,6 +82,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery
 
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.mediatek
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \

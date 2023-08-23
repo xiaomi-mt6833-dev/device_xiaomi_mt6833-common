@@ -69,6 +69,9 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 -vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
+# IR
+-vendor/lib64/hw/consumerir.common.so
+
 # Keymaster
 -vendor/bin/bp_kmsetkey_ca
 -vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
