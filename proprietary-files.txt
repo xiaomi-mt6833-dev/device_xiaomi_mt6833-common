@@ -78,6 +78,21 @@ vendor/lib/egl/egl.cfg
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 
+# NVRAM
+-vendor/bin/fuelgauged
+-vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/etc/init/nvram_daemon.rc
+vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
+-vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+-vendor/lib/libconnfem.so
+-vendor/lib/vendor.mediatek.hardware.nvram@1.0.so
+-vendor/lib/vendor.mediatek.hardware.nvram@1.1.so
+-vendor/lib64/libconnfem.so
+-vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
+-vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
+
 # TEE
 -vendor/lib64/libimsg_log.so
 -vendor/lib64/libteeclientjni.so
