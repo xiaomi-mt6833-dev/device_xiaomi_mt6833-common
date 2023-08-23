@@ -1,5 +1,8 @@
 # All blobs are from Redmi/opal/opal:12/SP1A.210812.016/V14.0.2.0.TGLMIXM:user/release-keys, unless pinned
 
+# Gatekeeper
+-vendor/lib64/hw/gatekeeper.beanpod.so
+
 # Graphics
 -vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc

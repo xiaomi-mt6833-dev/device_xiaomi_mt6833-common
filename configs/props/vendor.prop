@@ -1,3 +1,6 @@
+# Gatekeeper
+ro.hardware.gatekeeper=beanpod
+
 # Graphics
 debug.mediatek.appgamepq_compress=1
 debug.sf.disable_backpressure=1
