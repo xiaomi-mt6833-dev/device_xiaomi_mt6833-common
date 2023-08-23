@@ -71,3 +71,17 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+
+# TEE
+-vendor/lib64/libimsg_log.so
+-vendor/lib64/libteeclientjni.so
+-vendor/lib64/libteeclientjni@1.1.so
+-vendor/lib64/libteei_daemon_vfs.so
+
+# TEE (TA)
+vendor/thh/ta/08010203000000000000000000000000.ta
+vendor/thh/ta/14498ace2a8f11e880c8509a4c146f4c.ta
+vendor/thh/ta/3d08821c33a611e6a1fa089e01c83aa2.ta
+vendor/thh/ta/655a4b46cd7711eaaafbf382a6988e7b.ta
+vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta
+vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
