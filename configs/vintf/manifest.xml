@@ -30,6 +30,12 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.thermal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IThermal/default</fqname>
+        <fqname>@2.0::IThermal/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.composer_ext</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IComposerExt/default</fqname>
