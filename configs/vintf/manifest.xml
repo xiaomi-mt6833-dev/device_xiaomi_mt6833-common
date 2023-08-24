@@ -125,6 +125,11 @@
         <fqname>@3.0::IRadioOp/slot2</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IVideoTelephony/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fingerprintextension</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IXiaomiFingerprint/default</fqname>
