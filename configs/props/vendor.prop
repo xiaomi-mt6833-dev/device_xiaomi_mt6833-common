@@ -1,3 +1,9 @@
+# GNSS
+ro.vendor.gps.chrdev=gps_drv
+ro.vendor.mtk_agps_app=1
+ro.vendor.mtk_gps_support=1
+ro.vendor.mtk_log_hide_gps=1
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 

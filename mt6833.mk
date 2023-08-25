@@ -74,6 +74,13 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss-V1-ndk.vendor:64
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
