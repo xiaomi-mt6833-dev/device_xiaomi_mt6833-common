@@ -1,3 +1,10 @@
+# Audio
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+ro.config.vc_call_vol_steps=11
+ro.vendor.audio.us.proximity=true
+vendor.audiohal.telephonytx.type=2
+
 # Camera
 camera.disable_zsl_mode=1
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
