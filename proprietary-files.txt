@@ -321,6 +321,27 @@ vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 -vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 -vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
+# Media
+-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+vendor/etc/init/vpud.rc
+-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+-vendor/lib/libMtkOmxAdpcmDec.so
+-vendor/lib/libMtkOmxApeDec.so
+-vendor/lib/libMtkOmxCore.so
+-vendor/lib/libMtkOmxGsmDec.so
+-vendor/lib/libMtkOmxMp3Dec.so
+-vendor/lib/libadpcmdec_mtk.so
+-vendor/lib/libgz_gp_client.so
+-vendor/lib/libgz_uree.so
+-vendor/lib/libmp3dec_mtk.so
+-vendor/lib/libstagefrighthw.so
+-vendor/lib/libvcodec_oal.so
+-vendor/lib/libvcodecdrv_header_stub.so
+-vendor/lib/libvpu5.so
+-vendor/lib64/libstagefrighthw.so
+-vendor/lib64/libvpu5.so
+
 # NVRAM
 -vendor/bin/fuelgauged
 -vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
