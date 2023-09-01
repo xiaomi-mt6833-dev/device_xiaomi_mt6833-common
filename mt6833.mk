@@ -272,6 +272,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayMT6833 \
     SystemUIOverlayMT6833 \
     TelephonyOverlayMT6833 \
+    TetheringOverlayMT6833 \
     WifiResOverlayMT6833
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
