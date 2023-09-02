@@ -175,6 +175,9 @@ ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_me_lock_mode=3
 telephony.active_modems.max_count=2
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
