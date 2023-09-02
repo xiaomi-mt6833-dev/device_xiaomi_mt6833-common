@@ -5,6 +5,12 @@ ro.config.vc_call_vol_steps=11
 ro.vendor.audio.us.proximity=true
 vendor.audiohal.telephonytx.type=2
 
+# Bluetooth
+persist.bluetooth.a2dp_offload.disabled=false
+ro.vendor.bt.platform=connac1x
+ro.vendor.mtk.bt_sap_enable=true
+vendor.bluetooth.ldac.abr=true
+
 # Camera
 camera.disable_zsl_mode=1
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
