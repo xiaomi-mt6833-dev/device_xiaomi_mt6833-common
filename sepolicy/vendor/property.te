@@ -1,2 +1,2 @@
 # Thermal
-vendor_public_prop(thermal_engine_prop)
+vendor_public_prop(vendor_thermal_engine_prop)
