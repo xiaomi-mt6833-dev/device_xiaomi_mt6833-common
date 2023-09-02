@@ -182,3 +182,9 @@ ro.vendor.mtk.sensor.support=yes
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
 ro.vendor.mtk_tee_gp_support=1
+
+# WiFi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m
