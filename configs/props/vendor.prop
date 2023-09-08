@@ -67,6 +67,7 @@ ro.hardware.gatekeeper=beanpod
 # Graphics
 debug.mediatek.appgamepq_compress=1
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.high_fps.early.app.duration=22500000
