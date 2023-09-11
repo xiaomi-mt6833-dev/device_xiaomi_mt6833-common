@@ -290,6 +290,11 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@2.0.vendor
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \

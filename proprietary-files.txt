@@ -536,6 +536,11 @@ vendor/etc/init/init.thermalloadalgod.rc
 -vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 -vendor/lib64/hw/thermal_hal.so
 
+# USB
+-vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml;MODULE=manifest_usb.mediatekv2
+
 # WiFi
 -vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
