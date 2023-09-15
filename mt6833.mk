@@ -7,6 +7,9 @@
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6833-common/mt6833-common-vendor.mk)
 
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
