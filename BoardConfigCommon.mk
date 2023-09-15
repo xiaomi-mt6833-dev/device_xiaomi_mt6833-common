@@ -178,6 +178,8 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
 # Vintf
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
 
 # WiFi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
