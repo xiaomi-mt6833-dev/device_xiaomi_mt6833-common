@@ -1,4 +1,4 @@
-# All blobs are from Redmi/opal/opal:12/SP1A.210812.016/V14.0.2.0.TGLMIXM:user/release-keys, unless pinned
+# All blobs are from Redmi/opal/opal:12/SP1A.210812.016/V14.0.3.0.TGLMIXM:user/release-keys, unless pinned
 
 # AEE
 -vendor/lib/libaedv.so
