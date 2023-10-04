@@ -115,7 +115,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.4.vendor \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # FM Radio
 PRODUCT_PACKAGES += \
