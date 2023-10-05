@@ -65,6 +65,10 @@ function blob_fixup {
 			grep -q "android.hardware.gnss-V1-ndk_platform.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
 			;;
+		vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+			grep -q "libavservices_minijail_vendor.so" "${2}" && \
+			"${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
+			;;
 		vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
 			grep -q "android.hardware.power-V2-ndk_platform.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
