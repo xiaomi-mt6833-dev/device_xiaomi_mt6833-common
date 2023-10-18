@@ -204,7 +204,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayMT6833
+    FrameworksResOverlayMT6833 \
+    WifiResOverlayMT6833
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
