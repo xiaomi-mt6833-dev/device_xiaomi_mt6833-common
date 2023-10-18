@@ -152,6 +152,19 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery
 
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.mediatek
@@ -206,6 +219,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6833 \
     FrameworksResOverlayMT6833 \
+    TelephonyOverlayMT6833 \
     WifiResOverlayMT6833
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
