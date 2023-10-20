@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Alarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
