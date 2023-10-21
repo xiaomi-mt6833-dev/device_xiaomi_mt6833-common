@@ -80,6 +80,9 @@ function blob_fixup {
 		vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
 			sed -i 's/start/enable/' "${2}"
 			;;
+		vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
+			echo "$(cat ${2}) input" > "${2}"
+			;;
 		vendor/lib*/hw/vendor.mediatek.hardware.pq@*-impl.so)
 			grep -q "libutils.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
