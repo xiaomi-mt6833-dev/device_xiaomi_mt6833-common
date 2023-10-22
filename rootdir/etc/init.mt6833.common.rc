@@ -17,6 +17,9 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
+    # Set SKU prop for NFC
+    setprop ro.boot.hardware.sku ${ro.product.vendor.device}
+
 on init
     write /proc/bootprof "INIT:init"
     # Support legacy paths
