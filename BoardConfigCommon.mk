@@ -95,6 +95,12 @@ BOARD_HAS_MTK_HARDWARE := true
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
+# NFC
+ODM_MANIFEST_SKUS += nfc
+
+ODM_MANIFEST_NFC_FILES += \
+    hardware/samsung/nfc/1.2/android.hardware.nfc@1.2-service.samsung.xml
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
