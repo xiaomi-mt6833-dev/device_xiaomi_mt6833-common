@@ -549,6 +549,9 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 -vendor/lib64/libwpfa.so
 -vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
+# Secure Element
+-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
+
 # TEE
 -vendor/lib64/libimsg_log.so
 -vendor/lib64/libteeclientjni.so
