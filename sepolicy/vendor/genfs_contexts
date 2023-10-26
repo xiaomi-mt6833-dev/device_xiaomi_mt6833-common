@@ -1,3 +1,6 @@
+# Fingerprint
+genfscon sysfs /devices/platform/fingerprint                                                                              u:object_r:vendor_fingerprint_data_file:s0
+
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/wakeup                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11d01000.i2c9/i2c-9/9-005a/wakeup                                                        u:object_r:sysfs_wakeup:s0
