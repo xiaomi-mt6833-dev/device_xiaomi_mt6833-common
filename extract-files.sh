@@ -83,6 +83,9 @@ function blob_fixup {
 		vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
 			echo "$(cat ${2}) input" > "${2}"
 			;;
+		vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
+			sed -i 's/1.1/1.2/' "$2"
+			;;
 		vendor/lib*/hw/vendor.mediatek.hardware.pq@*-impl.so)
 			grep -q "libutils.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
