@@ -382,7 +382,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi-service \
     hostapd \
     wpa_supplicant
 
