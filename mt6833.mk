@@ -358,7 +358,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal.mt6833 \
     android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libshim_sensors
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \

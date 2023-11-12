@@ -77,6 +77,10 @@ function blob_fixup {
 			grep -q "android.hardware.power-V2-ndk_platform.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
 			;;
+		vendor/bin/mnld | vendor/lib*/libaalservice.so | vendor/lib*/libcam.utils.sensorprovider.so)
+			grep -q "libshim_sensors.so" "${2}" || \
+			"${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+			;;
 		vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
 			sed -i 's/start/enable/' "${2}"
 			;;
