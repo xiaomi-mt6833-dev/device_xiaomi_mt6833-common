@@ -18,7 +18,6 @@ cc_defaults {
     name: "android.hardware.health-service.mt6833-defaults",
     defaults: [
         "libhealth_aidl_impl_user",
-        "libhealth_aidl_charger_defaults",
     ],
     relative_install_path: "hw",
     vintf_fragments: ["android.hardware.health-service.mt6833.xml"],
