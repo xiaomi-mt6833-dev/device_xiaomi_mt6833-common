@@ -352,7 +352,6 @@ system/etc/init/init.vtservice.rc
 -system/framework/mediatek-telecom-common.jar
 -system/framework/mediatek-telephony-base.jar
 -system/framework/mediatek-telephony-common.jar
--system/framework/mediatek-wfo-legacy.jar
 -system/lib64/libcomutils.so
 -system/lib64/libimsma.so
 -system/lib64/libimsma_adapt.so
