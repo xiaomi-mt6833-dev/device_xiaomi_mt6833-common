@@ -327,23 +327,21 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # IMS
--vendor/bin/hw/vtservice_hidl
 -vendor/bin/volte_clientapi_ua
 vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/volte_rcs_ua.rc
--vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 -vendor/lib/libipsec_ims_shr.so
 -vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
--vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
--vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 -vendor/lib64/libipsec_ims_shr.so
 -vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
--vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# IMS - from TECNO/TSSI/FULL-64-ARMV82:14/UP1A.230620.001/230919V1761:user/release-keys
+-vendor/bin/hw/vtservice_hidl|047b26f80b338b7d0869840d243eefebe82d56f5
+-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
+-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
 
 # IMS (System)
--system/bin/vtservice
-system/etc/init/init.vtservice.rc
 -system/framework/mediatek-common.jar
 -system/framework/mediatek-framework.jar
 -system/framework/mediatek-ims-base.jar
@@ -351,22 +349,25 @@ system/etc/init/init.vtservice.rc
 -system/framework/mediatek-ims-extension-plugin.jar
 -system/framework/mediatek-telecom-common.jar
 -system/framework/mediatek-telephony-common.jar
--system/lib64/libcomutils.so
--system/lib64/libimsma.so
--system/lib64/libimsma_adapt.so
--system/lib64/libimsma_rtp.so
--system/lib64/libimsma_socketwrapper.so
--system/lib64/libmtk_vt_service.so
--system/lib64/libmtk_vt_wrapper.so
--system/lib64/libsignal.so
--system/lib64/libsink.so
--system/lib64/libsource.so
--system/lib64/libvcodec_cap.so
--system/lib64/libvcodec_capenc.so
--system/lib64/libvsim-adaptor-client.so
--system/lib64/libvt_avsync.so
--system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext
--system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext
+
+# IMS (System) - from TECNO/TSSI/FULL-64-ARMV82:14/UP1A.230620.001/230919V1761:user/release-keys
+-system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
+system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
+-system_ext/lib64/libcomutils.so|fae6b5fd7628518eaf3e3eadac2133dd83f30839
+-system_ext/lib64/libimsma.so|573e9c9f7d6879b7f23f0eb1c2ff12fcad3dd80b
+-system_ext/lib64/libimsma_adapt.so|b95939f797ba52d87bb9fa6ebf356e0fb4fcfe56
+-system_ext/lib64/libimsma_rtp.so|25b249764ba9df7d89f3af209f38e4cb4993ddb3
+-system_ext/lib64/libimsma_socketwrapper.so|5a26aae9eee36b9e5dc8875aa68b20ced2e1b676
+-system_ext/lib64/libmtk_vt_service.so|890ddf6c84e1c99c2f575d673570e00c63f9ebe6
+-system_ext/lib64/libmtk_vt_wrapper.so|6f6f18d546a98676f7ed725f0acaebc5d6d58471
+-system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
+-system_ext/lib64/libsink.so|9e1d49a08d3f7bd1cc4508877ca552c8927be8fc
+-system_ext/lib64/libsource.so|75cbf8a9741eb2aeb42e0469d00099905b1a797a
+-system_ext/lib64/libvcodec_cap.so|834445754d88428b01a8a09fcbc9903b3d15d785
+-system_ext/lib64/libvcodec_capenc.so|3b5e76522a7331248c2864493fdade2bdf73c4c3
+-system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|d12f0aef8da477595468df3cebb5fa4f0a8770be
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|cdd9da0a0896031fd034069566bc80c332cdc9c1
 
 # IMS (System) - from https://github.com/xiaomi-mt6833-dev/IMS/releases/tag/V14.0.3.0.TGLMIXM
 -system/framework/mediatek-telephony-base.jar|34330fd459491f03f10985130e4ad563c1021029

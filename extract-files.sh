@@ -60,10 +60,6 @@ fi
 
 function blob_fixup {
 	case "$1" in
-		system/lib*/libsink.so)
-			grep -q "libshim_sink.so" "${2}" || \
-			"${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
-			;;
 		vendor/bin/hw/android.hardware.gnss-service.mediatek | \
 		vendor/lib*/hw/android.hardware.gnss-impl-mediatek.so)
 			grep -q "android.hardware.gnss-V1-ndk_platform.so" "${2}" && \
