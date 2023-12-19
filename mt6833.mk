@@ -191,7 +191,7 @@ PRODUCT_COPY_FILES += \
 
 # IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.mediatek
+    android.hardware.ir-service.example
 
 # Keymaster
 PRODUCT_PACKAGES += \
