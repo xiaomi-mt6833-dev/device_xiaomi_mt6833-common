@@ -58,6 +58,19 @@ if [ -z "${SRC}" ]; then
 	SRC="adb"
 fi
 
+symlink_fixup(){
+	[ "${SRC}" != "adb" ] && {
+		local dir="$(dirname ${SRC}/${1})"
+		local fname="$(basename ${SRC}/${1})"
+		local plat="$(grep 'ro.board.platform' ${SRC}/vendor/build.prop | cut -d= -f2 | head -1)"
+		local fpath="${dir}/${plat}/${fname}"
+		[ -f "${fpath}" ] && {
+			cp -f "${fpath}" "${2}"
+		}
+	}
+}
+export -f symlink_fixup
+
 function blob_fixup {
 	case "$1" in
 		vendor/bin/hw/android.hardware.gnss-service.mediatek | \
@@ -87,6 +100,10 @@ function blob_fixup {
 			;;
 		vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
 			sed -i 's/1.1/1.2/' "$2"
+			;;
+		vendor/lib*/libaiselector.so | vendor/lib*/libdpframework.so | vendor/lib*/libmtk_drvb.so | \
+		vendor/lib*/libnir_neon_driver.so | vendor/lib*/libpq_prot.so)
+			symlink_fixup "${1}" "${2}"
 			;;
 		vendor/lib*/hw/vendor.mediatek.hardware.pq@*-impl.so)
 			grep -q "libutils.so" "${2}" && \
