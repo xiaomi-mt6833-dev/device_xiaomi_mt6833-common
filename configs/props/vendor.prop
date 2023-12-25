@@ -62,6 +62,9 @@ ro.netflix.bsp_rev=MTK6833-32817-1
 persist.vendor.connsys.fm_chipid=mt6631_6635
 ro.vendor.fm.platform=mt6631_6635
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # GNSS
 ro.vendor.gps.chrdev=gps_drv
 ro.vendor.mtk_agps_app=1
