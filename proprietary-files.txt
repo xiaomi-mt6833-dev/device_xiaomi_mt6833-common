@@ -326,6 +326,11 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 -vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
+# Hotword Enrollment
+-product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
+-product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # IMS
 -vendor/bin/hw/vtservice_hidl
 -vendor/bin/volte_clientapi_ua
