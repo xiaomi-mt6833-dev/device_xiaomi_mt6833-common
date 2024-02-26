@@ -65,6 +65,7 @@ symlink_fixup(){
 		local plat="$(grep 'ro.board.platform' ${SRC}/vendor/build.prop | cut -d= -f2 | head -1)"
 		local fpath="${dir}/${plat}/${fname}"
 		[ -f "${fpath}" ] && {
+			rm -rf "${2}"
 			cp -f "${fpath}" "${2}"
 		}
 	}
