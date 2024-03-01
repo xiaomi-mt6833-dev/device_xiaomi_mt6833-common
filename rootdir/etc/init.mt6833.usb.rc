@@ -43,6 +43,8 @@ on post-fs
     mount functionfs mtp /dev/usb-ffs/mtp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
     mount functionfs ptp /dev/usb-ffs/ptp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
 
+    setprop sys.usb.mtp.device_type 3
+
     # Modify class/subclass/protocol for rndis.gs4
     # Remote NDIS: Class: Wireless Controller (0xe0), Subclass: 0x1, Protocol: 0x3
     write /config/usb_gadget/g1/functions/rndis.gs4/class e0
