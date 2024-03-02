@@ -24,6 +24,34 @@ on post-fs-data
     chown bluetooth bluetooth /dev/ttyGS2
     chmod 0660 /dev/ttyGS2
 
+on boot
+    # Connfem
+    insmod /vendor/lib/modules/connfem.ko
+
+on property:vendor.connsys.driver.ready=yes
+    # Bluetooth
+    insmod /vendor/lib/modules/bt_drv_${ro.vendor.bt.platform}.ko
+    chown bluetooth bluetooth /proc/driver/bt_dbg
+
+    # FM Radio
+    insmod /vendor/lib/modules/fmradio_drv_${ro.vendor.fm.platform}.ko
+
+    # GPS
+    insmod /vendor/lib/modules/${ro.vendor.gps.chrdev}.ko
+
+    # WMT
+    insmod /vendor/lib/modules/wmt_drv.ko
+
+    # WiFi
+    insmod /vendor/lib/modules/${ro.vendor.wlan.chrdev}.ko
+    insmod /vendor/lib/modules/wlan_drv_${ro.vendor.wlan.gen}.ko
+    start wlan_assistant
+
+on property:vendor.connsys.driver.ready=no
+    # Bluetooth
+    insmod /vendor/lib/modules/bt_drv_${ro.vendor.bt.platform}.ko
+    chown bluetooth bluetooth /proc/driver/bt_dbg
+
 # GPS
 service mnld /vendor/bin/mnld
     class main
