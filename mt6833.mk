@@ -104,10 +104,6 @@ PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
-# CAS
-PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service-lazy
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor:64 \
