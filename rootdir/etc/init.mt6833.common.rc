@@ -148,29 +148,6 @@ on post-fs
     chown radio system /proc/freqhopping/status
     chown radio system /proc/freqhopping/userdef
 
-    # Support A/B feature for emmc boot region
-    symlink /dev/block/sda /dev/block/mmcblk0boot0
-    symlink /dev/block/sdb /dev/block/mmcblk0boot1
-    symlink /dev/block/mmcblk0boot0 /dev/block/by-name/preloader_a
-    symlink /dev/block/mmcblk0boot1 /dev/block/by-name/preloader_b
-
-    # Support A/B feature for combo emmc and ufs OTA update
-    symlink /dev/block/by-name/preloader_a /dev/block/by-name/preloader_emmc_a
-    symlink /dev/block/by-name/preloader_b /dev/block/by-name/preloader_emmc_b
-    symlink /dev/block/by-name/preloader_a /dev/block/by-name/preloader_ufs_a
-    symlink /dev/block/by-name/preloader_b /dev/block/by-name/preloader_ufs_b
-
-    # Support A/B feature for combo emmc and ufs OTA update
-    symlink /dev/block/by-name/preloader_a /dev/block/by-name/preloader_emmc_a
-    symlink /dev/block/by-name/preloader_b /dev/block/by-name/preloader_emmc_b
-    symlink /dev/block/by-name/preloader_a /dev/block/by-name/preloader_ufs_a
-    symlink /dev/block/by-name/preloader_b /dev/block/by-name/preloader_ufs_b
-
-    symlink /dev/block/mapper/pl_a /dev/block/by-name/preloader_raw_a
-    symlink /dev/block/mapper/pl_b /dev/block/by-name/preloader_raw_b
-    symlink /dev/block/mapper/pl_a /dev/block/platform/bootdevice/by-name/preloader_raw_a
-    symlink /dev/block/mapper/pl_b /dev/block/platform/bootdevice/by-name/preloader_raw_b
-
     # change owner
     chown system system /proc/bootprof
     chmod 0664 /proc/bootprof
