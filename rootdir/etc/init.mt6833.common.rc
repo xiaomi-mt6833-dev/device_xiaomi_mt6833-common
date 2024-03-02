@@ -20,13 +20,6 @@ on early-init
 
 on init
     write /proc/bootprof "INIT:init"
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-
-    # if primary storage is physical, set ro.vold.primary_physical to 1
-    # setprop ro.vold.primary_physical 1
-
-    mkdir /mnt/cd-rom 0000 system system
 
     # change lk_env permission
     chown root system /proc/lk_env
@@ -56,7 +49,6 @@ on property:init.svc.vendor.charger=running
 
     chmod 0660 /dev/spm
     chown system system /dev/spm
-    start spm_script
     chmod 0666 /dev/kmsg
     chmod 0775 /mnt/vendor
     mkdir /mnt/vendor/nvcfg
@@ -93,8 +85,6 @@ on early-fs
 on fs
     write /proc/bootprof "INIT:fs"
 
-    start vendor.boot-hal-1-2
-
     # mount fstab
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/tracing/trace_marker "B|1|Mount"
@@ -107,9 +97,6 @@ on fs
     write /proc/sys/vm/page-cluster 0
     write /proc/sys/vm/swappiness 100
     write /sys/kernel/mm/swap/vma_ra_enabled false
-
-on fs
-    mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
 on late-fs
     write /proc/bootprof "INIT:late-fs"
@@ -129,9 +116,6 @@ on post-fs
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "1 100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "2 100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 100"
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
@@ -889,50 +873,12 @@ on boot
     chmod 0600 /sys/bus/spi/devices/spi5.0/irq
     chmod 0200 /sys/bus/spi/devices/spi5.0/fingerdown_wait
 
-on property:vold.decrypt=trigger_reset_main
-    write /proc/bootprof "INIT:vold.decrypt=trigger_reset_main"
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
-
-on property:vold.decrypt=trigger_post_fs_data
-    write /proc/bootprof "INIT:vold.decrypt=trigger_post_fs_data"
-
-on property:vold.decrypt=trigger_restart_min_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_min_framework"
-    start msensord
-    start permission_check
-
-on property:vold.decrypt=trigger_restart_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_framework"
-    start msensord
-    start permission_check
-
-on property:vold.decrypt=trigger_shutdown_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_shutdown_framework"
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
+    # FPSGO
+    insmod /vendor/lib/modules/fpsgo.ko
 
 ## mtk printk uart controller
 on property:persist.vendor.uartconsole.enable=*
     write /proc/mtprintk ${persist.vendor.uartconsole.enable}
-
-# WiFi
-on property:vendor.sysctl.tx=3
-    exec - root -- /vendor/bin/iwpriv wlan0 driver "SET_PWR_CTRL MySar 3"
-on property:vendor.sysctl.tx=2
-    exec - root -- /vendor/bin/iwpriv wlan0 driver "SET_PWR_CTRL MySar 2"
-on property:vendor.sysctl.tx=1
-    exec - root -- /vendor/bin/iwpriv wlan0 driver "SET_PWR_CTRL MySar 1"
-on property:vendor.sysctl.tx=0
-    exec - root -- /vendor/bin/iwpriv wlan0 driver "SET_PWR_CTRL MySar 0"
-
-# bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B -z \
-        -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
-    class late_start
-    disabled
-    oneshot
-    keycodes 114 115 116
 
 # end boot time fs tune
 on property:sys.boot_completed=1
@@ -952,7 +898,6 @@ on property:sys.boot_completed=1
 
 # start EAS+
 on property:sys.boot_completed=1
-
     write /sys/devices/system/cpu/eas/enable 2
     write /proc/cpufreq/cpufreq_sched_disable 0
     chown system system /dev/stune/foreground/schedtune.prefer_idle
@@ -996,53 +941,6 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/devices/platform/battery_meter/FG_daemon_log_level 7
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
-
-# add loghidl client
-service loghidlsysservice /system/bin/loghidlsysservice
-    class main
-    user root
-    group system
-    disabled
-
-# add meta_tst for ATM
-service meta_tst /vendor/bin/meta_tst
-    class core
-    user root
-    group radio gps system wifi audio bluetooth media
-    capabilities NET_RAW NET_ADMIN
-    socket meta-atci stream 660 radio system
-    disabled
-    oneshot
-
-service factory_no_image /vendor/bin/factory
-    user root
-    group radio system wifi media gps audio bluetooth wakelock nfc
-    capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
-    socket factory-atci stream 660 radio system
-    disabled
-    oneshot	
-
-# start meta_tst for ATM
-on property:sys.boot_completed=1 && property:ro.boot.atm=enable
-    start meta_tst
-    start loghidlvendorservice
-    start loghidlsysservice
-
-# reset mdmode when modem crash happens in ATM
-on property:vendor.mtk.md1.status=reset
-    setprop persist.vendor.atm.mdmode normal
-
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-
-# VSIM service (vendor OSI)
-service osi /system/bin/osi
-    class main
-    user root
-    disabled
-    oneshot
-    #seclabel u:r:osi:s0
 
 service mi_thermald /vendor/bin/mi_thermald
     class main
