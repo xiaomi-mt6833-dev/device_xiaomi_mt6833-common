@@ -18,6 +18,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "init.modem.rc",
     src: "etc/init.modem.rc",

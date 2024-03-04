@@ -873,9 +873,6 @@ on boot
     chmod 0600 /sys/bus/spi/devices/spi5.0/irq
     chmod 0200 /sys/bus/spi/devices/spi5.0/fingerdown_wait
 
-    # FPSGO
-    insmod /vendor/lib/modules/fpsgo.ko
-
 ## mtk printk uart controller
 on property:persist.vendor.uartconsole.enable=*
     write /proc/mtprintk ${persist.vendor.uartconsole.enable}

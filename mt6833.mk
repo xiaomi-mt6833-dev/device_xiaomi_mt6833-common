@@ -242,6 +242,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
+# Modules
+PRODUCT_PACKAGES += \
+    init.insmod.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/modules/init.insmod.mt6833.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6833.cfg
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor
