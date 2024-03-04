@@ -93,6 +93,7 @@ vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+vendor/firmware/BT_FW.cfg
 -vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 -vendor/lib/libbluetooth_mtk.so
 -vendor/lib/libbluetooth_mtk_pure.so
@@ -111,6 +112,10 @@ vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 -vendor/lib64/libbluetooth_audio_session_mediatek.so
 -vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 -vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+
+# Bluetooth (Firmware) - from gold V816.0.2.0.UNQMIXM
+vendor/firmware/soc2_2_ram_bt_1_1_hdr.bin|098fbb5f22a8e5f367d310032db0808c47827df9
+vendor/firmware/soc2_2_ram_bt_1a_1_hdr.bin|b4e9dfd91db040e5d85b6875e427511195a5ad3e
 
 # Camera
 -vendor/bin/lib3a.ccu.ddr
@@ -188,17 +193,9 @@ vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/firmware/WMT_SOC.cfg
 vendor/firmware/txpowerctrl.cfg
 
-# Connectivity (Firmware) - from Redmi/vnd_gold/gold:12/TP1A.220624.014/V14.0.1.0.TNQCNXM:user/release-keys
-vendor/firmware/BT_FW.cfg|48ecc83e9d9c32fdf2e80b824d368234f724eae7
-vendor/firmware/WIFI_RAM_CODE_soc2_2_1_1.bin|e4d3097818eca0b722d3525efcbe96b462dea636
-vendor/firmware/WIFI_RAM_CODE_soc2_2_1a_1.bin|4b3b27b07e6b770a66b66cfe0be8a2ad5e113c11
-vendor/firmware/soc2_2_ram_bt_1_1_hdr.bin|7c1f091e8afddaf6d8df19146c277a550ab5ebb9
-vendor/firmware/soc2_2_ram_bt_1a_1_hdr.bin|adb55cb709ded3bf19b2dd26e19fbc369bd57f72
-vendor/firmware/soc2_2_ram_mcu_1_1_hdr.bin|2a13e989871b6d8e46131f7e058bc74081497e63
-vendor/firmware/soc2_2_ram_mcu_1a_1_hdr.bin|e3c72fe950c4e6a121f5a4522776678cda9b9c46
-vendor/firmware/soc2_2_ram_wifi_1_1_hdr.bin|d0be6f604ace05053743b0226ba96f3be4785035
-vendor/firmware/soc2_2_ram_wifi_1a_1_hdr.bin|1b3d484e6ad23cd61047b31584b2e96a6ac8a328
-vendor/firmware/wifi.cfg|2d6d6c719c5d60d5836baffd2d6fd1fb3eb76ea6
+# Connectivity (Firmware) - from gold V816.0.2.0.UNQMIXM
+vendor/firmware/soc2_2_ram_mcu_1_1_hdr.bin|1d3264858b8826e7871855d4060c3b76a4af4cf9
+vendor/firmware/soc2_2_ram_mcu_1a_1_hdr.bin|3cbd7dc357e906a8931ee1dea8cfaf57967df483
 
 # DRM
 -vendor/bin/hw/android.hardware.drm@1.4-service.widevine
@@ -589,3 +586,10 @@ vendor/etc/init/init.thermalloadalgod.rc
 -vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+
+# WiFi (Firmware) - from gold V816.0.2.0.UNQMIXM
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1_1.bin|5d880e06a4fc6d22943704715c17b9f232767b67
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1a_1.bin|3745e47bc25e25f29429f539624060b9d40b1391
+vendor/firmware/soc2_2_ram_wifi_1_1_hdr.bin|a30c10c3eecbb729d09cf79b77139aaab1ec3448
+vendor/firmware/soc2_2_ram_wifi_1a_1_hdr.bin|fb61d57b4d46d3c10d0b10852567c9b916efa8c3
+vendor/firmware/wifi.cfg|efb5866734e875985bcbcb5b67082d6bda00b79d
