@@ -74,7 +74,7 @@ export -f symlink_fixup
 
 function blob_fixup {
 	case "$1" in
-		system/lib*/libsink.so)
+		system_ext/lib*/libsink.so)
 			grep -q "libshim_sink.so" "${2}" || \
 			"${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
 			;;
