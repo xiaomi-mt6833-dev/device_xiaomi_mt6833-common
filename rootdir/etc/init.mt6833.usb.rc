@@ -1,6 +1,3 @@
-on early-init
-    write /sys/module/musb_hdrc/parameters/kernel_init_done 1
-
 on post-fs
     setprop vendor.usb.vid "0x0E8D"
     mkdir /dev/usb-ffs 0775 shell shell
@@ -190,14 +187,6 @@ on property:init.svc.vendor.charger=running
     setprop vendor.usb.acm_enable 0
     setprop sys.usb.config hid
 
-### more command at init.usb.configfs.rc ###
-on property:sys.usb.config=none && property:sys.usb.configfs=1
-    write /config/usb_gadget/g1/idVendor ${vendor.usb.vid}
-    rm /config/usb_gadget/g1/configs/b.1/f4
-    rm /config/usb_gadget/g1/configs/b.1/f5
-    write /sys/devices/platform/mt_usb/saving 0
-
-### HID for KPOC ###
 on property:sys.usb.config=hid && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "HID"
     write /config/usb_gadget/g1/idProduct 0x20FF
