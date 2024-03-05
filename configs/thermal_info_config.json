@@ -336,6 +336,14 @@
       "Type": "CPU"
     },
     {
+      "Name": "thermal-cpufreq-0",
+      "Type": "CPU"
+    },
+    {
+      "Name": "thermal-cpufreq-1",
+      "Type": "CPU"
+    },
+    {
       "Name": "mtk-cl-mutt00",
       "Type": "MODEM"
     },
