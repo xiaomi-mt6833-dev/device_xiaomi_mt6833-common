@@ -54,6 +54,9 @@ on post-fs
     write /config/usb_gadget/g1/functions/rndis.gs4/os_desc/interface.ncm/compatible_id RNDIS
     write /config/usb_gadget/g1/functions/rndis.gs4/ifname rndis%d
 
+    # Set RNDIS config
+    setprop vendor.usb.rndis.config rndis.gs4
+
     # chown file/folder permission
     chown system system /config/usb_gadget/
     chown system system /config/usb_gadget/g1
