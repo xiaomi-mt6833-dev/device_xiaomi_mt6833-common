@@ -358,7 +358,9 @@ vendor/etc/init/init.vtservice_hidl.rc
 -system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
 -system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|383a7afa0d356fe72c1c927c3961ca189072364f
 -system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|b52ec1689bc81e3fbe6481786a5ee18552690762
--system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|9f43ff20360e8066c40887203d682677283d3eeb
+
+# IMS (System) - from https://github.com/xiaomi-mt6833-dev/ImsService/releases/tag/gold-V816.0.2.0.UNQMIXM
+-system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|9f43ff20360e8066c40887203d682677283d3eeb|9d5abc025e93dd9547b8fcabc974fe7e0a1cf2ea
 
 # IR
 -vendor/lib64/hw/consumerir.common.so
