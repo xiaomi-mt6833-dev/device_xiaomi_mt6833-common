@@ -18,6 +18,7 @@
             <item value="332|Q.850;cause=21|510" />
         </string-array>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2591,6 +2592,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="854">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2603,6 +2605,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="855">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2615,6 +2618,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="856">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2627,6 +2631,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="857">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2639,6 +2644,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="858">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2651,6 +2657,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="859">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2663,6 +2670,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="860">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2675,6 +2683,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="861">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2687,6 +2696,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="862">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2699,6 +2709,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="863">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2711,6 +2722,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="864">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2723,6 +2735,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="865">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2735,6 +2748,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="866">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2747,6 +2761,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="867">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2759,6 +2774,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="868">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2771,6 +2787,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="869">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2783,6 +2800,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="870">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2795,6 +2813,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="871">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2807,6 +2826,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="872">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2819,6 +2839,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="873">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2831,6 +2852,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="874">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2843,6 +2865,7 @@
         <boolean name="carrier_name_override_bool" value="false" />
         <string name="carrier_name_string" />
         <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="51">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2851,6 +2874,7 @@
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="52">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2859,6 +2883,7 @@
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="53">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2867,6 +2892,7 @@
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="54">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2875,6 +2901,7 @@
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="55">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2883,6 +2910,7 @@
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="56">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2891,6 +2919,7 @@
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="66">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2899,6 +2928,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="67">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2907,6 +2937,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="750">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2915,6 +2946,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="751">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2923,6 +2955,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="752">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2931,6 +2964,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="753">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2939,6 +2973,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="754">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2947,6 +2982,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="755">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2955,6 +2991,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="756">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2963,6 +3000,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="70">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2971,6 +3009,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="799">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2979,6 +3018,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="845">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2987,6 +3027,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="846">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2995,11 +3036,13 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="847">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="848">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -3008,6 +3051,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="849">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -3016,6 +3060,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="850">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -3024,11 +3069,13 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="851">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="852">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -3037,6 +3084,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="853">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -3045,26 +3093,31 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="908">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="909">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="910">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="911">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="410" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
