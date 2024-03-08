@@ -76,6 +76,9 @@ on property:init.svc.vendor.charger=running
     write /sys/class/leds/lcd-backlight/brightness "1000"
     write /sys/class/leds/lcd-backlight/trigger "backlight"
 
+    # Thermal
+    start mi_thermald
+
     # Stop bootprof
     write /proc/bootprof "0"
 
