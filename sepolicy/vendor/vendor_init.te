@@ -1,2 +1,5 @@
+# Backlight
+rw_dir_file(vendor_init, sysfs_leds)
+
 # Camera
 set_prop(vendor_init, vendor_camera_prop)
