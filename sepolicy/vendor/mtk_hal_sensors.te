@@ -12,3 +12,6 @@ allow mtk_hal_sensors sensor_device:chr_file rw_file_perms;
 
 # Allow mtk_hal_sensors to search sysfs leds
 allow mtk_hal_sensors sysfs_leds:dir search;
+
+# Allow mtk_hal_sensors to read sysfs led files
+allow mtk_hal_sensors sysfs_leds:file read;
