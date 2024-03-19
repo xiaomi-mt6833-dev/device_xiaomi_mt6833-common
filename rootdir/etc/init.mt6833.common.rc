@@ -877,6 +877,9 @@ on boot
     chmod 0600 /sys/bus/spi/devices/spi5.0/irq
     chmod 0200 /sys/bus/spi/devices/spi5.0/fingerdown_wait
 
+    # WiFi
+    setprop ro.boot.wificountrycode 00
+
 ## mtk printk uart controller
 on property:persist.vendor.uartconsole.enable=*
     write /proc/mtprintk ${persist.vendor.uartconsole.enable}
