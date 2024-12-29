@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor:64 \
     android.hardware.camera.provider@2.6.vendor:64 \
+    libcamera_metadata.vendor:64 \
     libexif.vendor:64 \
     libpng.vendor:64
 
