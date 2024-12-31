@@ -1,8 +1,3 @@
-on early-init
-    setprop vendor.all.modules.ready 0
-    write /proc/bootprof "modprobe: Load_Module_START"
-    start insmod_sh
-
 on post-fs-data
     #/dev/ttyMT2 for Connectivity BT/FM/GPS usage
     chmod 0660 /dev/ttyMT2
@@ -36,14 +31,6 @@ service mnld /vendor/bin/mnld
     capabilities WAKE_ALARM
     group gps inet misc sdcard_rw sdcard_r media_rw system radio wakelock
     socket mnld stream 660 gps system
-
-# Modules
-service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.mt6833.cfg
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
 
 # WMT
 service wmt_loader /vendor/bin/wmt_loader
