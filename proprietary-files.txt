@@ -380,17 +380,13 @@ vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 -vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
 # Media
--vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+-vendor/bin/vpud
 vendor/etc/init/vpud.rc
--vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+-vendor/lib/AVCSecureVdecCA.so
+-vendor/lib/HEVCSecureVdecCA.so
+-vendor/lib/VP9SecureVdecCA.so
 -vendor/lib/libHEVCdec_sa.ca7.android.so
 -vendor/lib/libadpcmdec_mtk.so
--vendor/lib/libcodec2_soft_mtk_alacdec.so
--vendor/lib/libcodec2_soft_mtk_apedec.so
--vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
--vendor/lib/libcodec2_soft_mtk_mp3dec.so
--vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
 -vendor/lib/libgz_gp_client.so
 -vendor/lib/libgz_uree.so
 -vendor/lib/libh264dec_customize.so
@@ -401,12 +397,31 @@ vendor/etc/init/vpud.rc
 -vendor/lib/libmp4enc_sa.ca7.so
 -vendor/lib/libthha.so
 -vendor/lib/libvcodec_oal.so
+-vendor/lib/libvcodec_utility.so
+-vendor/lib/libvcodecdrv.so
 -vendor/lib/libvcodecdrv_header_stub.so
 -vendor/lib/libvp8dec_sa.ca7.so
 -vendor/lib/libvp8enc_sa.ca7.so
 -vendor/lib/libvp9dec_sa.ca7.so
 -vendor/lib/libvpu5.so
+-vendor/lib/libvpud_vcodec.so
 -vendor/lib64/libvpu5.so
+
+# Media (C2)
+-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+-vendor/lib/libcodec2_mtk_c2store.so
+-vendor/lib/libcodec2_mtk_vdec.so
+-vendor/lib/libcodec2_mtk_venc.so
+-vendor/lib/libcodec2_soft_mtk_alacdec.so
+-vendor/lib/libcodec2_soft_mtk_apedec.so
+-vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
+-vendor/lib/libcodec2_soft_mtk_mp3dec.so
+-vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
+-vendor/lib/libcodec2_vpp_qt_plugin.so
+-vendor/lib/libcodec2_vpp_rs_plugin.so
+-vendor/lib/libformatter.so
 
 # NVRAM
 -vendor/bin/fuelgauged
