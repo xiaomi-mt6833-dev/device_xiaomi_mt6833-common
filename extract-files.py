@@ -70,7 +70,7 @@ def blob_fixup_return_1(
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsink.so': blob_fixup()
-        .add_needed('libshim_sink.so'),
+        .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
     'system/priv-app/ImsService/ImsService.apk': blob_fixup()
