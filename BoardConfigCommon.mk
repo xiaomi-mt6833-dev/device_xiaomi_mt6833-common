@@ -11,7 +11,6 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    dtbo \
     system \
     system_dlkm \
     system_ext \
@@ -76,8 +75,6 @@ TARGET_SCREEN_DENSITY := 440
 BOARD_HAVE_MTK_FM := true
 
 # Kernel
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6833
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
