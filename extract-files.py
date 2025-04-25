@@ -94,6 +94,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('1.1', '1.2'),
     ('vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so','vendor/lib64/libmtkcam_stdutils.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/lib64/hw/hwcomposer.mt6833.so' : blob_fixup()
+         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
