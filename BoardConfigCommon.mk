@@ -71,9 +71,6 @@ BUILD_BROKEN_PREBUILT_ELF_FILES := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# FM Radio
-BOARD_HAVE_MTK_FM := true
-
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6833
 BOARD_KERNEL_IMAGE_NAME := Image.gz
@@ -134,6 +131,7 @@ TARGET_BOARD_PLATFORM := mt6833
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 
 # RIL
