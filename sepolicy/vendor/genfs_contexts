@@ -5,6 +5,11 @@ genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/wakeup_ena
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/fingerdown_wait                                     u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/irq                                                 u:object_r:vendor_sysfs_fingerprint:s0
 
+# Graphics
+genfscon sysfs /devices/platform/13000000.mali/dvfs_period                                                                u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/js_ctx_scheduling_mode                                                     u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/js_scheduling_period                                                       u:object_r:sysfs_gpu:s0
+
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/wakeup                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11d01000.i2c9/i2c-9/9-005a/wakeup                                                        u:object_r:sysfs_wakeup:s0
