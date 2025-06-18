@@ -1,4 +1,5 @@
 import /vendor/etc/init/hw/init.connectivity.rc
+import /vendor/etc/init/hw/init.mt6833.power.rc
 import /vendor/etc/init/hw/init.mt6833.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
@@ -8,12 +9,6 @@ import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.modem.rc
 
 # *** DO NOT import the new rc file after this line ***
-
-on early-init
-    write /proc/bootprof "INIT:early-init"
-    # boot perf. tune
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "0 0 0 0"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
 
 on init
     write /proc/bootprof "INIT:init"
@@ -28,22 +23,12 @@ on init
 
     write /proc/sys/net/ipv4/tcp_mtu_probing 1
 
-    # update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/top-app/cpus 0-7
-
 on late-init
     write /proc/bootprof "INIT:late-init"
     # enable rcu_expedited
     write /sys/kernel/rcu_expedited 1
 
 on property:init.svc.vendor.charger=running
-    #Set CPU/Dram init parameter
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
     chmod 0660 /dev/spm
     chown system system /dev/spm
     chmod 0666 /dev/kmsg
@@ -111,12 +96,6 @@ on late-fs
 
 on post-fs
     write /proc/bootprof "INIT:post-fs"
-
-    # boot perf. tune
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "0 100"
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "1 100"
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "2 100"
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 100"
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
@@ -626,10 +605,6 @@ on post-fs-data
     chmod 0664 /sys/bus/platform/drivers/emi_ctrl/concurrency_scenario
     chown media media /sys/bus/platform/drivers/emi_ctrl/concurrency_scenario
 
-    #mtk_sched
-    chmod 0660 /dev/mtk_sched
-    chown system media /dev/mtk_sched
-
     #BT SCO CVSD, for MT6572 and MT6582 CVSD codec on AP
     chmod 0660 /dev/ebc
     chown media media /dev/ebc
@@ -896,25 +871,6 @@ on property:sys.boot_completed=1
 
 # start EAS+
 on property:sys.boot_completed=1
-    write /sys/devices/system/cpu/eas/enable 2
-    write /proc/cpufreq/cpufreq_sched_disable 0
-    chown system system /dev/stune/foreground/schedtune.prefer_idle
-    chown system system /dev/stune/top-app/schedtune.prefer_idle
-    chown system system /dev/stune/rt/schedtune.prefer_idle
-    write /dev/stune/foreground/schedtune.prefer_idle 0
-    write /dev/stune/top-app/schedtune.prefer_idle 0
-    write /dev/stune/rt/schedtune.prefer_idle 0
-    write /dev/stune/top-app/schedtune.boost 1
-    write /proc/sys/kernel/sched_migration_cost_ns 200000
-
-    # restore perf. parameters
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "0 0"
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "1 0"
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "2 0"
-    write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 0"
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
     # stop bootprof
     write /proc/bootprof 0
     write /proc/mtprintk ${persist.vendor.uartconsole.enable}
