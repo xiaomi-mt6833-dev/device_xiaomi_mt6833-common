@@ -502,7 +502,6 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 -vendor/lib64/libcarrierconfig.so
 -vendor/lib64/libccci_util.so
 -vendor/lib64/libmipc.so
--vendor/lib64/libmipc.so
 -vendor/lib64/libmnetlink_v104.so
 -vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 -vendor/lib64/libmtk-ril.so
