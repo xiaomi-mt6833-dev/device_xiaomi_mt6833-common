@@ -29,6 +29,7 @@ from extract_utils.utils import (
 namespace_imports = [
     'device/xiaomi/mt6833-common',
     'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
     'hardware/xiaomi',
 ]
 
